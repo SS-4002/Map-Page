@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+    background-color: grey;
+}
+
+/* Main Style */
+main {
+    position: fixed;
+    inset: 0;
+}
+
+main iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Form Style */
+form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: white;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 50px;
+    position: fixed;
+    z-index: 1;
+    top: 15px;
+    left: 150px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+
+/* Form Images Style */
+#menu:hover,
+#directions:hover {
+    cursor: pointer;
+}
+
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.1s ease;
+}
+
+.icon-wrapper:hover .tooltip {
+    opacity: 1;
+}
+
+/* Section Style */
+section {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    top: 30px;
+    right: 50px;
+}
+
+.apps,
+.account {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip2 {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.1s ease;
+}
+
+.apps:hover .tooltip2 {
+    opacity: 1;
+}
+
+.account:hover .tooltip2 {
+    opacity: 1;
+}
+
+.apps img,
+.account img {
+    width: 50px;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.apps img:hover,
+.account img:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+/* Mobile Media Screen */
+@media screen and (max-width: 768px) {
+    form {
+        top: 50px;
+        left: 0;
+        max-width: 350px;
+        width: 100%;
+        gap: 8px;
+    }
+
+    section {
+        top: 60px;
+        right: 30px;
+    }
+}

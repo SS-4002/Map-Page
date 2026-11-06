@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <title>Map Page</title>
+    </head>
+    <body>
+        <!-- Form -->
+        <form>
+            <div class="icon-wrapper">
+                <img id="menu" src="images/menu.svg" alt="menu icon" height="30px">
+                <span class="tooltip">Menu</span>
+            </div>
+
+            <input type="text" id="maps" placeholder="Search Google Maps">
+
+            <div class="icon-wrapper">
+                <img id="search" src="images/search.svg" alt="search icon" width="25px">
+                <span class="tooltip">Search</span>
+            </div>
+
+            <div class="icon-wrapper">
+                <img id="directions" src="images/directions.svg" alt="arrow right icon" width="25px">
+                <span class="tooltip">Directions</span>
+            </div>
+        </form>
+        
+        <!-- App and Account icon-->
+        <section>
+            <div class="apps">
+                <img src="images/apps.svg" alt="apps icon">
+                <span class="tooltip2">Google apps</span>
+            </div>
+
+            <div class="account">
+                <img src="images/account.svg" alt="account icon">
+                <span class="tooltip2">Google account</span>
+            </div>
+        </section>
+
+        <!-- Map -->
+        <main>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19840.28580026486!2d-0.0622592!3d51.567578600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1780829017837!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </main>
+    </body>
+</html>
